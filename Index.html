@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="hero">
+    <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Your Name" class="profile-image">
+    <div class="hero-text">
+        <h2>Hello! I am [Your Name]</h2>
+        <p>Welcome to my portfolio website. Here you will find some of my projects and achievements.</p>
+    </div>
+</section>
+<section>
+    <h2>About Me</h2>
+    <p>A brief introduction about yourself.</p>
+</section>
+{% endblock %}
